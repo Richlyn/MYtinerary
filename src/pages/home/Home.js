@@ -1,44 +1,47 @@
 import React, { Component } from "react";
-import Logo from "../assets/MYtineraryLogo.png";
+import Logo from "../../Assets/MYtineraryLogo.png";
+import Arrow from "../../Assets/circled-right-2.png";
+import Header from "../../Components/Header/Header.js";
+import "./Home.css";
 
 class Home extends Component {
   render() {
     return (
-      <div>
-        <header className="App-header">
+      <div className="Home">
+        <Header />
+        <header className="Home-header">
           <img src={Logo} className="MYtinerary-logo" alt="logo" />
-          <p>
-            Find your perfect trip, designed by insiders who know and love their
-            cities.
-          </p>
-          <h2>Start Browsing</h2>
-          <img
-            src="assets/circled-right-2.png"
-            className="circledArrow"
-            alt="circle arrow"
-          />
-
-          <p>Want to build your own MYtinerary?</p>
-
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Log in
-          </a>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Create Account
-          </a>
-
-          <img src="assets/homeIcon.png" className="homeIcon" alt="home" />
         </header>
+        <p>
+          Find your perfect trip, designed by insiders who know and love their
+          cities.
+        </p>
+
+        <section>
+          <h2>Start Browsing</h2>
+          <img src={Arrow} className="circledArrow" alt="circle arrow" />
+        </section>
+        <section>
+          <p>Want to build your own MYtinerary?</p>
+          <div class="Links">
+            <a
+              className="Home-link"
+              href="https://reactjs.org"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Log in
+            </a>
+            <a
+              className="Home-link"
+              href="https://reactjs.org"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Create Account
+            </a>
+          </div>
+        </section>
       </div>
     );
   }
