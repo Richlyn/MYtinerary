@@ -5,6 +5,7 @@ import Nav from "./Components/Nav/Nav.js";
 import Home from "./Pages/Home/Home.js";
 import Cities from "./Pages/Cities/Cities.js";
 import BecameAMember from "./Pages/Member/Create/Create.js";
+import Login from "./Pages/Member/Login/Login.js";
 import Error from "./Pages/Error/Error.js";
 import Footer from "./Components/Footer/Footer.js";
 
@@ -21,6 +22,7 @@ class App extends Component {
               <Route path="/" component={Home} exact />
               <Route path="/Cities" component={Cities} />
               <Route path="/BecomeAMember" component={BecameAMember} />
+              <Route path="/Login" component={Login} />
               <Route component={Error} />
             </Switch>
           </div>

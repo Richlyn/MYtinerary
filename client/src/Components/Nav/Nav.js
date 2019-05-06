@@ -19,8 +19,8 @@ class Nav extends Component {
             Become a Member
           </NavLink>
 
-          <NavLink className="menu-item" to="/react">
-            React
+          <NavLink className="menu-item" to="/Login">
+            Log In
           </NavLink>
 
           <NavLink className="menu-item" to="/vue">
